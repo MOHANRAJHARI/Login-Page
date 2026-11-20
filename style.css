@@ -51,7 +51,7 @@ body {
 
 .company-header h1 {
     color: white;
-    font-size: 23px;
+    font-size: 25px;
     letter-spacing: 1px;
 }
 
@@ -59,7 +59,6 @@ body {
     color: #80b8ff;
     margin-left: 5px;
 }
-
 /* =========================
    LOGIN CARD
 ========================= */
