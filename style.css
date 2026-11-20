@@ -1,0 +1,322 @@
+
+/* =========================
+   GENERAL RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #101c35, #263e63);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.page-container {
+    width: 100%;
+    max-width: 430px;
+}
+
+/* =========================
+   COMPANY HEADER
+========================= */
+
+.company-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.company-logo {
+    width: 45px;
+    height: 45px;
+    background: white;
+    color: #18345c;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.company-header h1 {
+    color: white;
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+
+.company-header h1 span {
+    color: #80b8ff;
+    margin-left: 5px;
+}
+
+/* =========================
+   LOGIN CARD
+========================= */
+
+.login-card {
+    background: white;
+    padding: 38px 35px;
+    border-radius: 14px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+}
+
+.login-heading {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.login-heading h2 {
+    color: #182b49;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.login-heading p {
+    color: #788397;
+    font-size: 14px;
+}
+
+/* =========================
+   FORM FIELDS
+========================= */
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    color: #26364f;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d5dce6;
+    border-radius: 7px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #2864ae;
+    box-shadow: 0 0 0 3px rgba(40, 100, 174, 0.1);
+}
+
+/* =========================
+   PASSWORD TOGGLE
+========================= */
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    padding-right: 65px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    color: #2864ae;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* =========================
+   LOGIN OPTIONS
+========================= */
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0 25px;
+    font-size: 13px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #586579;
+    cursor: pointer;
+}
+
+.remember-me input {
+    accent-color: #2864ae;
+}
+
+.form-options a {
+    color: #2864ae;
+    text-decoration: none;
+}
+
+.form-options a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.login-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 7px;
+    background: #214e87;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-button:hover {
+    background: #163a6b;
+}
+
+/* =========================
+   MESSAGE
+========================= */
+
+.message {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 16px;
+    min-height: 18px;
+}
+
+.message.success {
+    color: #16834a;
+}
+
+.message.error {
+    color: #d32f2f;
+}
+
+/* =========================
+   LOGIN FOOTER
+========================= */
+
+.login-footer {
+    border-top: 1px solid #edf0f4;
+    margin-top: 28px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.login-footer p {
+    color: #788397;
+    font-size: 13px;
+}
+
+.login-footer a {
+    color: #2864ae;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   PAGE FOOTER
+========================= */
+
+.page-footer {
+    text-align: center;
+    color: #c5d0df;
+    font-size: 12px;
+    margin-top: 25px;
+    line-height: 1.8;
+}
+
+/* =========================
+   WELCOME DASHBOARD
+========================= */
+
+.dashboard-container {
+    max-width: 500px;
+}
+
+.welcome-card {
+    text-align: center;
+    padding: 50px 30px;
+}
+
+.welcome-icon {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.welcome-card h2 {
+    color: #18345c;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.love-message {
+    color: #d64b75;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.welcome-subtitle {
+    color: #788397;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 480px) {
+
+    .login-card {
+        padding: 30px 22px;
+    }
+
+    .company-header h1 {
+        font-size: 19px;
+    }
+
+    .login-heading h2 {
+        font-size: 24px;
+    }
+
+    .form-options {
+        font-size: 12px;
+    }
+
+    .welcome-card h2 {
+        font-size: 25px;
+    }
+
+    .love-message {
+        font-size: 20px;
+    }
+
+}

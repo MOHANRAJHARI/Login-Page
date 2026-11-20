@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Company Portal | Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="page-container">
+
+        <!-- Company Header -->
+        <header class="company-header">
+            <div class="company-logo">C</div>
+            <h1>COMPANY<span>PORTAL</span></h1>
+        </header>
+
+        <!-- Login Card -->
+        <main class="login-card">
+
+            <div class="login-heading">
+                <h2>Welcome Back</h2>
+                <p>Please sign in to access your account</p>
+            </div>
+
+            <form id="loginForm">
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Mail ID</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="name@company.com"
+                        autocomplete="username"
+                        required
+                    >
+                </div>
+
+                <!-- Password -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+
+                    <div class="password-wrapper">
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter your password"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="togglePassword"
+                            class="toggle-password"
+                        >
+                            Show
+                        </button>
+
+                    </div>
+                </div>
+
+                <!-- Remember Me -->
+                <div class="form-options">
+
+                    <label class="remember-me">
+                        <input type="checkbox" id="rememberMe">
+                        Remember me
+                    </label>
+
+                    <a href="#" id="forgotPassword">
+                        Forgot Password?
+                    </a>
+
+                </div>
+
+                <button type="submit" class="login-button">
+                    Sign In
+                </button>
+
+                <div
+                    id="loginMessage"
+                    class="message"
+                    role="status"
+                    aria-live="polite">
+                </div>
+
+            </form>
+
+            <!-- Registration Link -->
+            <div class="login-footer">
+                <p>
+                    New user?
+                    <a href="register.html">Create Account</a>
+                </p>
+            </div>
+
+        </main>
+
+        <footer class="page-footer">
+            <p>&copy; 2026 Company Portal. All rights reserved.</p>
+            <p>Secure Employee Access</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

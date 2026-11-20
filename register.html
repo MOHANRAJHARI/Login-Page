@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | Company Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="page-container">
+
+        <header class="company-header">
+            <div class="company-logo">C</div>
+            <h1>COMPANY<span>PORTAL</span></h1>
+        </header>
+
+        <main class="login-card">
+
+            <div class="login-heading">
+                <h2>Create Account</h2>
+                <p>Register for company portal access</p>
+            </div>
+
+            <form id="registerForm">
+
+                <!-- Name -->
+                <div class="form-group">
+                    <label for="name">Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+
+                <!-- Employee ID -->
+                <div class="form-group">
+                    <label for="employeeId">Employee ID</label>
+
+                    <input
+                        type="text"
+                        id="employeeId"
+                        placeholder="Enter your Employee ID"
+                        required
+                    >
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Mail ID</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <!-- Password -->
+                <div class="form-group">
+                    <label for="password">Create Password</label>
+
+                    <div class="password-wrapper">
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Create your password"
+                            minlength="8"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="togglePassword"
+                            class="toggle-password"
+                        >
+                            Show
+                        </button>
+
+                    </div>
+                </div>
+
+                <button type="submit" class="login-button">
+                    Create Account
+                </button>
+
+                <div
+                    id="registerMessage"
+                    class="message"
+                    role="status"
+                    aria-live="polite">
+                </div>
+
+            </form>
+
+            <div class="login-footer">
+                <p>
+                    Already have an account?
+                    <a href="index.html">Login Here</a>
+                </p>
+            </div>
+
+        </main>
+
+        <footer class="page-footer">
+            <p>&copy; 2026 Company Portal. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
