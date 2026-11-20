@@ -1,6 +1,6 @@
 
 // ========================================
-// COMPANY PORTAL - MAIN JAVASCRIPT
+// Deva's Story - MAIN JAVASCRIPT
 // ========================================
 
 
